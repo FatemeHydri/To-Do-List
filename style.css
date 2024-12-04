@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Marmelad&family=Sigmar&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+html {
+  font-size: 10px;
+}
+body {
+  direction: ltr;
+  font-family:  "Marmelad", sans-serif;;
+  font-size: 1.5rem;
+  background-color: rgb(10, 10, 10);
+  color: #fff;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 1300px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.flex-space {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.center {
+  text-align: center;
+}
+.pb1 {
+  padding-bottom: 30px;
+}
+.mb1 {
+  margin-bottom: 30px;
+}
+.radius {
+  border-radius: 10px;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+
+.background {
+  background: url(assets/images/bac.jpg) no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.hero-section .title {
+  font-family: "Sigmar", sans-serif;
+  font-size: 10rem;
+}
+.hero-section .time .hi {
+  background-image: linear-gradient(
+    to left,
+    #030d1d,
+    #00234b,
+    #00387f,
+    #004cb4,
+    #125eeb
+    );
+  padding: 3px;
+}
+.hero-section .time .date-time {
+  color: #00234b;
+}
+.input {
+    opacity: 0;
+}
+.input .task {
+  width: 80%;
+  height: 50px;
+  border: 2px solid #5d2e7d;
+  font-size: 1.5rem;
+  padding: 0 5px;
+}
+.input .task::placeholder {
+  font-size: 1.5rem;
+  padding: 0 5px; 
+}
+.input button {
+  font-family: "Sigmar", sans-serif;
+  width: 15%;
+  height: 50px;
+  background-image: linear-gradient(
+    to right top,
+    #5f12d8,
+    #8e00d4,
+    #b200d0,
+    #d100cb,
+    #eb12c6
+    );
+  border: 2px solid #fff;
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+.input .list .list-task li {
+  position: relative;
+}
+.input .list .list-task .btn {
+  position: absolute;
+  z-index: 1;
+  font-family: "Times New Roman", Times, serif;
+  width: 10%;
+  height: 50px;
+  background: transparent;
+  font-size: 1.5rem;
+  color: #030d1d;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.input .list .list-task .delete {
+  top: 50%;
+  left: 10%;
+}
+.input .list .list-task .edit {
+  top: 40%;
+  left: 10%;
+}
+.input .list .list-task .done {
+  top: 30%;
+  left: 10%;
+}
+footer {
+  height: 100px;
+}
+footer .footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100px;
+}
+footer .footer .show {
+  font-family: "Sigmar", sans-serif;
+  font-size: 3rem;
+  color: #fd1d1d;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.style-list {
+  border-radius: 63% 25% 20% 44% / 51% 25% 25% 46%;
+  width: 25%;
+  font-size: 1.6rem;
+  background-image: linear-gradient(
+  to right top,
+  #200d9d,
+  #81008e,
+  #b50077,
+  #d7005c,
+  #eb1242
+);
+}
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 300px;
+  max-height: 300px;
+  margin: 10% 5% 10% 20%;
+}
+.style-list:hover {
+  width: 50%;
+}
+.style-list:nth-child(odd) {
+  background-image: linear-gradient(
+  to right top,
+  #9d0d4c,
+  #9a005f,
+  #8d0078,
+  #700095,
+  #2013b3
+);
+}
